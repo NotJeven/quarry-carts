@@ -16,7 +16,7 @@ summon MinecartSpawner 1118 19 13 {CustomName:redCart,Invulnerable:1,CustomDispl
 # teleports
 tp @a[team=team2] 1141 14 0 90 0
 tp @a[team=team1] 1004 14 0 -90 0
-run lobbyInfo
+function lobbyInfo
 
 
 # blue wins run this
