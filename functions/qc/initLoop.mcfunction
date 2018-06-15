@@ -1,1 +1,0 @@
-function qc:gameInit if @a[x=-10,y=100,z=-10,dx=20,dy=20,dz=20]
