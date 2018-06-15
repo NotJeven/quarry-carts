@@ -1,0 +1,9 @@
+html{
+	background-image: url("qc.png");
+	font-family:"Arial";
+  	padding-top: 5%;
+  	padding-bottom: 5%;
+ 	background-attachment:fixed;
+ 	background-size: cover;
+    background-repeat: no-repeat;
+}
