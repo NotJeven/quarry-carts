@@ -4,3 +4,5 @@ effect @a[score_sinceDeath_min=1,score_respawn_min=1,score_respawn=1,score_inGam
 tp @a[score_sinceDeath_min=1,score_respawn_min=1,score_respawn=1,score_inGame_min=2,score_inGame=2,team=team1] 1004 14 0 -90 0
 tp @a[score_sinceDeath_min=1,score_respawn_min=1,score_respawn=1,score_inGame_min=2,score_inGame=2,team=team2] 1141 14 0 90 0
 scoreboard players set @a[score_sinceDeath_min=1,score_respawn_min=1,score_respawn=1,score_inGame_min=2,score_inGame=2] respawn 0
+
+

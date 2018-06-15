@@ -1,0 +1,1 @@
+gamerule gameLoopFunction qc:initLoop

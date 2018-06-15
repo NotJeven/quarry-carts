@@ -39,6 +39,4 @@ fill 1000 0 18 1145 33 18 minecraft:air 0 replace minecraft:dirt
 fill 1000 0 19 1145 33 19 minecraft:air 0 replace minecraft:dirt
 fill 1000 0 20 1145 33 20 minecraft:air 0 replace minecraft:dirt
 kill @e[type=Arrow]
-kill @e[1000,0,-19,dx=144,dy=32,dz=38,type=Item]
-
-
+kill @e[x=1000,y=0,z=-19,dx=144,dy=32,dz=38,type=item]
