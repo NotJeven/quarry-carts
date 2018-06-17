@@ -1,12 +1,13 @@
 tp @a[score_sinceDeath_min=1,score_respawn_min=1,score_respawn=1,score_inGame_min=1,score_inGame=1] ~ ~ ~ 0 30
 # notify respawning
 title @a[score_sinceDeath_min=1,score_respawn_min=1,score_respawn=1,score_inGame_min=1,score_inGame=1] times 5 20 0
-title @a[score_sinceDeath_min=1,score_respawn_min=1,score_respawn=1,score_inGame_min=1,score_inGame=1] subtitle [{text:"Respawning in "},{text:"10",color:red},{text:" seconds"}]
+title @a[score_sinceDeath_min=1,score_respawn_min=1,score_respawn=1,score_inGame_min=1,score_inGame=1] subtitle [{"text":"Respawning in "},{"text":"10","color":"red"},{"text":" seconds"}]
 title @a[score_sinceDeath_min=1,score_respawn_min=1,score_respawn=1,score_inGame_min=1,score_inGame=1] title ""
 playsound fire.ignite master @a[score_sinceDeath_min=1,score_respawn_min=1,score_respawn=1,score_inGame_min=1,score_inGame=1] 0 100 0 100 0 1
 # effects
 effect @a[score_sinceDeath_min=1,score_respawn_min=1,score_respawn=1,score_inGame_min=1,score_inGame=1] minecraft:night_vision 999999 0 true
 effect @a[score_sinceDeath_min=1,score_respawn_min=1,score_respawn=1,score_inGame_min=1,score_inGame=1] minecraft:saturation 999999 0 true
+effect @a[score_sinceDeath_min=1,score_respawn_min=1,score_respawn=1,score_inGame_min=1,score_inGame=1] minecraft:regeneration 999999 0 true
 # reset need scores
 scoreboard players set @a[score_sinceDeath_min=1,score_respawn_min=1,score_respawn=1,score_inGame_min=1,score_inGame=1] needSword 0 {Inventory:[{id:iron_sword}]}
 scoreboard players set @a[score_sinceDeath_min=1,score_respawn_min=1,score_respawn=1,score_inGame_min=1,score_inGame=1] needBow 0 {Inventory:[{id:bow}]}
