@@ -23,6 +23,7 @@ a:hover{color: orange;}
   width:80%;
   /*background-color: white;*/
   padding: 3%;
+  padding-top:0;
   /*box-shadow: 0 0 10px 2px #000000; */
 }
 
@@ -33,7 +34,7 @@ header{min-width:900px;}
 footer{
   color: white;
   text-align: center;
-  margin-top: 3%;
+  margin-top: 0;
   min-width: 900px;
   text-shadow: 0 0 2px #000000;
 }
@@ -56,6 +57,7 @@ footer a{color:white;}
   padding: 3%;
   min-width: 900px;
   max-width: 900px;
+  padding-bottom:1%;
 }
 
 .sidebar{
