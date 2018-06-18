@@ -38,5 +38,8 @@ fill 1000 0 17 1145 33 17 minecraft:air 0 replace minecraft:dirt
 fill 1000 0 18 1145 33 18 minecraft:air 0 replace minecraft:dirt
 fill 1000 0 19 1145 33 19 minecraft:air 0 replace minecraft:dirt
 fill 1000 0 20 1145 33 20 minecraft:air 0 replace minecraft:dirt
+fill 1093 2 10 1052 4 -9 minecraft:lava 0 replace minecraft:air
+fill 1093 2 10 1052 4 -9 minecraft:lava 0 replace minecraft:lava
 kill @e[type=Arrow]
 kill @e[x=1000,y=0,z=-19,dx=144,dy=32,dz=38,type=item]
+kill @e[type=spawner_minecart]

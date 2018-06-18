@@ -12,6 +12,7 @@ scoreboard objectives add needHelm dummy Needs Helmet
 scoreboard objectives add needChest dummy Needs Chest
 scoreboard objectives add needLeg dummy Needs Leggings
 scoreboard objectives add needBoot dummy Needs Boots
+scoreboard objectives add needWool dummy Needs Wool
 # respawn scores
 scoreboard objectives add sinceDeath stat.timeSinceDeath Since Death
 scoreboard objectives add respawn dummy Respawn

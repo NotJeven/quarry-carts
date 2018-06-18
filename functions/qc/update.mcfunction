@@ -16,9 +16,9 @@ execute @a[score_needItem_min=1,score_needItem=1] ~ ~ ~ function qc:itemGive
 
 # when to start the game
 scoreboard players set @e[type=armor_stand,name=playersOnTeams] var 0
-execute @a[team=!,score_inGame_min=0,score_inGame=0] ~ ~ ~ scoreboard players add @e[type=armor_stand,name=playersOnTeams] var 1
+execute @a[team=!] ~ ~ ~ scoreboard players add @e[type=armor_stand,name=playersOnTeams] var 1
 execute @e[type=armor_stand,name=gameRunning,score_var_min=0,score_var=0] ~ ~ ~ execute @e[type=armor_stand,name=playersOnTeams,score_var_min=2] ~ ~ ~ function qc:countdown
-execute @e[type=armor_stand,name=gameRunning,score_var_min=1,score_var=1] ~ ~ ~ function qc:countdownstop if @e[type=armor_stand,name=playersOnTeams,score_var=0]
+execute @e[type=armor_stand,name=gameRunning,score_var_min=1,score_var=1] ~ ~ ~ function qc:countdownstop if @e[type=armor_stand,name=playersOnTeams,score_var=1]
 
 # start
 execute @e[type=armor_stand,name=time,score_var_min=10,score_var=10] ~ ~ ~ function qc:gameStart
@@ -76,8 +76,11 @@ execute @a[score_sinceDeath_min=160,score_sinceDeath=161,score_respawn_min=2,sco
 execute @a[score_sinceDeath_min=180,score_sinceDeath=181,score_respawn_min=2,score_respawn=2,score_inGame_min=1,score_inGame=1] ~ ~ ~ function qc:respawn1
 
 # leave team 
-scoreboard players set @a[x=1143,y=8,z=1,r=2] inGame -1
-scoreboard players set @a[x=1002,y=8,z=0,r=2] inGame -1
+# scoreboard players set @a[x=1143,y=8,z=1,r=2] inGame -1
+# scoreboard players set @a[x=1002,y=8,z=0,r=2] inGame -1
 
 # no players in game reset map
 execute @e[type=armor_stand,name=playersOnTeams,score_var_min=0,score_var=0] ~ ~ ~ function qc:countdownstop if @e[type=armor_stand,name=gameRunning,score_var=2,score_var_min=2]
+
+# something to kill minecarts now that they glow if there is no game going
+execute @e[type=spawner_minecart] ~ ~ ~ execute @e[type=armor_stand,name=gameRunning,score_var_min=0,score_var=0] ~ ~ ~ kill @e[type=spawner_minecart]

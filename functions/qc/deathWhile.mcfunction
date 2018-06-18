@@ -14,6 +14,7 @@ scoreboard players set @a[score_sinceDeath=0,score_respawn_min=0,score_respawn=0
 scoreboard players set @a[score_sinceDeath=0,score_respawn_min=0,score_respawn=0,score_inGame_min=1,score_inGame=1] needChest 1 {Inventory:[{id:"minecraft:leather_chestplate"}]}
 scoreboard players set @a[score_sinceDeath=0,score_respawn_min=0,score_respawn=0,score_inGame_min=1,score_inGame=1] needLeg 1 {Inventory:[{id:"minecraft:chainmail_leggings"}]}
 scoreboard players set @a[score_sinceDeath=0,score_respawn_min=0,score_respawn=0,score_inGame_min=1,score_inGame=1] needBoot 1 {Inventory:[{id:"minecraft:chainmail_boots"}]}
+scoreboard players set @a[score_sinceDeath=0,score_respawn_min=0,score_respawn=0,score_inGame_min=1,score_inGame=1] needWool 1 {Inventory:[{id:"minecraft:wool"}]}
 # Fix items lost
 give @a[score_sinceDeath=0,score_respawn_min=0,score_respawn=0,score_inGame_min=1,score_inGame=1,score_needSword=0] minecraft:iron_sword 1 0 {Unbreakable:1}
 give @a[score_sinceDeath=0,score_respawn_min=0,score_respawn=0,score_inGame_min=1,score_inGame=1,score_needBow=0] minecraft:bow 1 0 {Unbreakable:1}
@@ -25,7 +26,9 @@ replaceitem entity @a[score_sinceDeath=0,score_respawn_min=0,score_respawn=0,sco
 replaceitem entity @a[score_sinceDeath=0,score_respawn_min=0,score_respawn=0,score_inGame_min=1,score_inGame=1,score_needBoot=0] slot.armor.feet minecraft:chainmail_boots 1 0 {Unbreakable:1}
 # give dirt/arrows
 give @a[score_sinceDeath=0,score_respawn_min=0,score_respawn=0,score_inGame_min=1,score_inGame=1] minecraft:arrow 32 0
-give @a[score_sinceDeath=0,score_respawn_min=0,score_respawn=0,score_inGame_min=1,score_inGame=1] minecraft:dirt 20 1 {CanPlaceOn:["minecraft:stone","minecraft:dirt","minecraft:planks"]}
+give @a[score_sinceDeath=0,score_respawn_min=0,score_respawn=0,score_inGame_min=1,score_inGame=1] minecraft:dirt 20 1 {CanPlaceOn:["minecraft:stone","minecraft:dirt","minecraft:planks","minecraft:log"]}
+give @a[score_sinceDeath=0,score_respawn_min=0,score_respawn=0,score_inGame_min=1,score_inGame=1,score_needWool=0,team=team1] minecraft:wool 1 11 {display:{Name:"Blue Team Member"}}
+give @a[score_sinceDeath=0,score_respawn_min=0,score_respawn=0,score_inGame_min=1,score_inGame=1,score_needWool=0,team=team2] minecraft:wool 1 14 {display:{Name:"Red Team Member"}}
 # reset give scores
 scoreboard players set @a[score_sinceDeath=0,score_respawn_min=0,score_respawn=0,score_inGame_min=1,score_inGame=1] needSword 0
 scoreboard players set @a[score_sinceDeath=0,score_respawn_min=0,score_respawn=0,score_inGame_min=1,score_inGame=1] needBow 0

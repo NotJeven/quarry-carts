@@ -2,8 +2,10 @@ clear @a[score_needItem_min=1,score_needItem=1]
 give @a[score_needItem_min=1,score_needItem=1] minecraft:iron_sword 1 0 {Unbreakable:1}
 give @a[score_needItem_min=1,score_needItem=1] minecraft:bow 1 0 {Unbreakable:1}
 give @a[score_needItem_min=1,score_needItem=1] minecraft:wooden_shovel 1 0 {CanDestroy:["minecraft:dirt"],Unbreakable:1}
-give @a[score_needItem_min=1,score_needItem=1] minecraft:dirt 20 1 {CanPlaceOn:["minecraft:stone","minecraft:dirt","minecraft:planks"]}
+give @a[score_needItem_min=1,score_needItem=1] minecraft:dirt 20 1 {CanPlaceOn:["minecraft:stone","minecraft:dirt","minecraft:planks","minecraft:log"]}
 give @a[score_needItem_min=1,score_needItem=1] minecraft:arrow 32 0
+give @a[score_needItem_min=1,score_needItem=1,team=team1] minecraft:wool 1 11 {display:{Name:"Blue Team Member"}}
+give @a[score_needItem_min=1,score_needItem=1,team=team2] minecraft:wool 1 14 {display:{Name:"Red Team Member"}}
 replaceitem entity @a[score_needItem_min=1,score_needItem=1] slot.armor.head minecraft:chainmail_helmet 1 0 {Unbreakable:1}
 replaceitem entity @a[team=team2,score_needItem_min=1,score_needItem=1] slot.armor.chest minecraft:leather_chestplate 1 0 {display:{color:14745600},Unbreakable:1}
 replaceitem entity @a[team=team1,score_needItem_min=1,score_needItem=1] slot.armor.chest minecraft:leather_chestplate 1 0 {display:{color:225},Unbreakable:1}

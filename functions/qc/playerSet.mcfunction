@@ -7,15 +7,18 @@ effect @a[score_inGame_min=-1,score_inGame=-1] minecraft:night_vision 999999 0 t
 effect @a[score_inGame_min=-1,score_inGame=-1] minecraft:saturation 999999 0 true
 effect @a[score_inGame_min=-1,score_inGame=-1] minecraft:weakness 999999 200 true
 effect @a[score_inGame_min=-1,score_inGame=-1] minecraft:instant_health 999999 200 true
+effect @a[score_inGame_min=-1,score_inGame=-1] minecraft:fire_resistance 999999 5 true
 # display
 tellraw @a[score_inGame_min=-1,score_inGame=-1] [{"text":"Map:      "},{"text":"Quarry Carts","color":"yellow"}]
 tellraw @a[score_inGame_min=-1,score_inGame=-1] [{"text":"Author:  "},{"text":"Jeven","color":"yellow"}]
 tellraw @a[score_inGame_min=-1,score_inGame=-1] [{"text":"Version: "},{"text":"v0.10","color":"yellow"}]
 tellraw @a[score_inGame_min=-1,score_inGame=-1] {"text":""}
-tellraw @a[score_inGame_min=-1,score_inGame=-1] [{"text":"Learn more about "},{"text":"Quarry Carts","color":"purple","underlined":"true","clickEvent":{"action":"open_url","value":"http://jevenlabs.net/qc"},"hoverEvent":{"action":"show_text","value":"Quarry Carts website ->"}},{"text":"."}]
+tellraw @a[score_inGame_min=-1,score_inGame=-1] [{"text":"Learn more about "},{"text":"Quarry Carts","color":"purple","underlined":"true","clickEvent":{"action":"open_url","value":"https://notjeven.github.io/quarry-carts"},"hoverEvent":{"action":"show_text","value":"Quarry Carts website ->"}},{"text":"."}]
 title @a[score_inGame_min=-1,score_inGame=-1] times 20 60 20
 title @a[score_inGame_min=-1,score_inGame=-1] subtitle [{"text":"Quarry Carts","color":"yellow"},{"text":" by ","color":"white"},{"text":"Jeven","color":"yellow"}]
 title @a[score_inGame_min=-1,score_inGame=-1] title ""
+# sound :)
+playsound entity.zombie_villager.converted master @a[score_inGame_min=-1,score_inGame=-1] ~ ~ ~ 100 1 1
 # set scores
 scoreboard teams leave @a[score_inGame_min=-1,score_inGame=-1]
 scoreboard players set @a[score_inGame_min=-1,score_inGame=-1] displayCooldown -100
@@ -30,5 +33,6 @@ scoreboard players set @a[score_inGame_min=-1,score_inGame=-1] needChest 0
 scoreboard players set @a[score_inGame_min=-1,score_inGame=-1] needChest 0
 scoreboard players set @a[score_inGame_min=-1,score_inGame=-1] needLeg 0
 scoreboard players set @a[score_inGame_min=-1,score_inGame=-1] needBoot 0
+scoreboard players set @a[score_inGame_min=-1,score_inGame=-1] needWool 0
 scoreboard players set @a[score_inGame_min=-1,score_inGame=-1] respawn 0
 scoreboard players set @a[score_inGame_min=-1,score_inGame=-1] inGame 0
