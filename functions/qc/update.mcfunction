@@ -80,7 +80,7 @@ execute @a[score_sinceDeath_min=180,score_sinceDeath=181,score_respawn_min=2,sco
 # scoreboard players set @a[x=1002,y=8,z=0,r=2] inGame -1
 
 # no players in game reset map
-execute @e[type=armor_stand,name=playersOnTeams,score_var_min=0,score_var=0] ~ ~ ~ function qc:countdownstop if @e[type=armor_stand,name=gameRunning,score_var=2,score_var_min=2]
+execute @e[type=armor_stand,name=gameRunning,score_var_min=2,score_var=2] ~ ~ ~ function qc:countdownstop unless @a[score_inGame=1,score_inGame_min=1]
 
 # something to kill minecarts now that they glow if there is no game going
 execute @e[type=spawner_minecart] ~ ~ ~ execute @e[type=armor_stand,name=gameRunning,score_var_min=0,score_var=0] ~ ~ ~ kill @e[type=spawner_minecart]

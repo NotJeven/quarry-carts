@@ -13,7 +13,7 @@ tellraw @a[score_inGame_min=-1,score_inGame=-1] [{"text":"Map:      "},{"text":"
 tellraw @a[score_inGame_min=-1,score_inGame=-1] [{"text":"Author:  "},{"text":"Jeven","color":"yellow"}]
 tellraw @a[score_inGame_min=-1,score_inGame=-1] [{"text":"Version: "},{"text":"v0.10","color":"yellow"}]
 tellraw @a[score_inGame_min=-1,score_inGame=-1] {"text":""}
-tellraw @a[score_inGame_min=-1,score_inGame=-1] [{"text":"Learn more about "},{"text":"Quarry Carts","color":"purple","underlined":"true","clickEvent":{"action":"open_url","value":"https://notjeven.github.io/quarry-carts"},"hoverEvent":{"action":"show_text","value":"Quarry Carts website ->"}},{"text":"."}]
+tellraw @a[score_inGame_min=-1,score_inGame=-1] [{"text":"Learn more about "},{"text":"Quarry Carts","color":"yellow","underlined":"true","clickEvent":{"action":"open_url","value":"https://notjeven.github.io/quarry-carts"},"hoverEvent":{"action":"show_text","value":"Quarry Carts website ->"}},{"text":"."}]
 title @a[score_inGame_min=-1,score_inGame=-1] times 20 60 20
 title @a[score_inGame_min=-1,score_inGame=-1] subtitle [{"text":"Quarry Carts","color":"yellow"},{"text":" by ","color":"white"},{"text":"Jeven","color":"yellow"}]
 title @a[score_inGame_min=-1,score_inGame=-1] title ""
