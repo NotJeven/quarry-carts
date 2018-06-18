@@ -1,24 +1,29 @@
 
 html{
-  background-image: url(background.png);
+  background-image: url(background.jpg);
   font-family:"Arial";
   padding-top: 5%;
   padding-bottom: 5%;
   background-attachment:fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-a{color:#790000;}
-a:hover{color: #bb0000;}
+a{color:#8b3e2f;}
+a:hover{color: orange;}
 
 .header_image{
   margin-bottom: 3%; 
   margin-left: auto; 
-  margin-right: auto; 
+  margin-right: auto;
   display: block;
   text-align: center;
   min-width: 312px;
-  max-width: 412px;
-  width:33%;
+  max-width: 1012px;
+  width:80%;
+  /*background-color: white;*/
+  padding: 3%;
+  /*box-shadow: 0 0 10px 2px #000000; */
 }
 
 header p{display:none;}
@@ -30,14 +35,16 @@ footer{
   text-align: center;
   margin-top: 3%;
   min-width: 900px;
+  text-shadow: 0 0 2px #000000;
 }
 
 footer a{color:white;}
 
 .sidebar div {
-  box-shadow: 0 0 7px 1px #0a0b13; 
+  box-shadow: 0 0 10px 2px #000000; 
   padding:3%;
   margin-bottom: 10%;
+  background-color: white;
 }
 
 .sidebar p{text-align: center;}
@@ -46,7 +53,6 @@ footer a{color:white;}
 .content{
   margin:auto;
   width:auto;
-  background-color:white;
   padding: 3%;
   min-width: 900px;
   max-width: 900px;
@@ -58,7 +64,11 @@ footer a{color:white;}
 }
 
 .main{
-  width:73%;
+  width:65%;
+  padding: 3%;
+  background-color: white;
+  box-shadow: 0 0 10px 2px #000000; 
+  margin-bottom: 3%
 }
 
 .images{
