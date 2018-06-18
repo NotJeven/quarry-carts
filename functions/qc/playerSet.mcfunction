@@ -9,8 +9,8 @@ effect @a[score_inGame_min=-1,score_inGame=-1] minecraft:weakness 999999 200 tru
 effect @a[score_inGame_min=-1,score_inGame=-1] minecraft:instant_health 999999 200 true
 effect @a[score_inGame_min=-1,score_inGame=-1] minecraft:fire_resistance 999999 5 true
 # display
-tellraw @a[score_inGame_min=-1,score_inGame=-1] [{"text":"Map:      "},{"text":"Quarry Carts","color":"yellow"}]
-tellraw @a[score_inGame_min=-1,score_inGame=-1] [{"text":"Author:  "},{"text":"Jeven","color":"yellow"}]
+tellraw @a[score_inGame_min=-1,score_inGame=-1] [{"text":"Map: "},{"text":"Quarry Carts","color":"yellow"}]
+tellraw @a[score_inGame_min=-1,score_inGame=-1] [{"text":"Author: "},{"text":"Jeven","color":"yellow"}]
 tellraw @a[score_inGame_min=-1,score_inGame=-1] [{"text":"Version: "},{"text":"v0.10","color":"yellow"}]
 tellraw @a[score_inGame_min=-1,score_inGame=-1] {"text":""}
 tellraw @a[score_inGame_min=-1,score_inGame=-1] [{"text":"Learn more about "},{"text":"Quarry Carts","color":"yellow","underlined":"true","clickEvent":{"action":"open_url","value":"https://notjeven.github.io/quarry-carts"},"hoverEvent":{"action":"show_text","value":"Quarry Carts website ->"}},{"text":"."}]
