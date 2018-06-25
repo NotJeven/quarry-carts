@@ -2,7 +2,7 @@
 by Jeven  
 v1.0
 
-### About:
+### About
 
 Quarry Carts is a simple escort/payload Minecraft PvP map. Two teams battle to escort
 their minecart payload to the end of their track. The first team to reach the end of
@@ -11,7 +11,7 @@ sword, a bow, a shovel, and a pile of dirt to manage their defences and offensiv
 
 Quarry Carts requires 2 players, and can comfortably play with up to 20.
 
-### Youtubers/Content Producers:
+### Youtubers/Content Producers
 
 Please add this template to your Youtube videos of Eris
 
@@ -24,7 +24,7 @@ Download: https://notjeven.github.io/quarry-carts
 I also love watching other people play my games, tweet your videos at me!
 https://twitter.com/notjeven
 
-### Technical information:
+### Technical information
 
 To install, extract the folder "Quarry Carts v1.0" from the 
 downloaded "Quarry Carts v1.0.zip". Then move the "Quarry Carts v1.0"
@@ -44,7 +44,7 @@ announce-player-achievements=false
 Any bugs/map issues, please report them to the bug tracker on the github repository
 (https://github.com/NotJeven/quarry-carts/issues) or contact me @NotJeven on twitter.
 
-### Changelog:
+### Changelog
 
 v1.0
 * Initial Release (Notes are changes from Mineathon Game)
@@ -57,7 +57,7 @@ v1.0
 * Health regen rules changed from 1 point/80 ticks (MC 1.8) to 1 point/50 ticks
 * Minecraft 1.12 support with mcfunctions
 
-### Links:
+### Links
 
 Quarry Carts webpage
 https://notjeven.github.io/quarry-carts
@@ -68,7 +68,7 @@ https://github.com/notjeven/quarry-carts
 Quarry Carts Font
 https://fontlibrary.org/en/font/murmur-mur
 
-### Credits:
+### Credits
     
 Jeven (Level Design, Scripting)  
 Jason Castle (Quarry Carts Font)  
