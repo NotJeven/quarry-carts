@@ -90,4 +90,5 @@ footer a{color:white;}
 code{
   padding-left: 3%; 
   display: block;
+  word-wrap: break-word;
 }
